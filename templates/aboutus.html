@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/static/airplaneicon.png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Oh Hey! Vacay!</title>
+   
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: black;
+  }
+ /* h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  */
+  .jumbotron {
+    color: white;
+    padding: 120px 30px;
+    font-family: Montserrat, sans-serif;
+    background-image: url("https://images.trvl-media.com/media/content/expus/graphics/launch/package1320x742.jpg");
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: light blue !important;
+    padding: 20px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #0f4f96;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: white !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: black !important;
+    background-color: light blue !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: light blue !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+  <style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;}</style><a href="http://www.cursors-4u.com/cursor/2008/12/17/cool-blue-outer-glow-pointer.html" target="_blank" title="Cool Blue Outer Glow Pointer"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Cool Blue Outer Glow Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-dark bg-primary">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/"><image src ='/static/logo.png' alt="Logo" width="70" height="70"> </image></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li><a href="visualize">VISUALIZE</a></li> -->
+        <li><a href="/slides">SLIDES</a></li>
+        <li><a href="/aboutus">ABOUT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" >
+        <h1>Oh hey! Vacay!!</h1>
+        <p>We specialize in finding the ontime flights with the best fares!!</p>
+      </div>
+    </div>
+
+<p> 
+  We made a very good team , encouraging , helping each other throughout this project. We worked long nights and debugged every single line of code to make this project success. Hope the website we built is useful to you to plan your vacation. 
+
+  </p>
+
+<img src="static/images/pic.jpg">
+
+    <!-- <div class="row col-md-12">
+         <h3>Welcome to our website.
+          Please choose the your Flight Preference in the form below and click predict. You can choose to view and visualize 
+          best fare or best airline on-time. We have used Predictive Analysis to predict and recommend the airline for your choice! </h3>
+    </div>
+    <! <div></div>
+    <div></div> -->
+    <!-- <p></p> -->
+    <!-- <div class="row">
+      <div class="col-md-4 ">
+        <div class="well">
+          <h5>CHOOSE YOUR FLIGHT PREFERENCE:</h5>
+          <h5>MONTH:</h5>
+          <select id="selMonth"></select>
+          <h5>ORIGIN:</h5>
+          <select id="selOrigin" ></select>
+          <h5>DESTINATION:</h5>
+          <select id="selDestination" ></select>
+          <h5>AIRLINE:</h5>
+          <select id="selAirline" ></select>
+          <br><br>
+          <div>
+            <input type="radio" name="ontime" id="ontime" value="ontime" checked> Ontime
+            <input type="radio" name="ontime" id="fare" value="fare"> Best Fares
+
+          </div><br>
+          <div class="input-group-btn">
+              <button type="button" class="btn btn-primary" onclick="submitted()">Predict</button>
+              <br><br> 
+              <div></div>
+              <p></p>
+              <div>
+                <image src ='/static/airplane.png' alt="Logo" width="330" height="210"> </image>
+              </div>
+          </div>
+       </div>
+       
+     </div> -->
+     <!-- <div class="col-md-6">
+      <div class="panel panel-primary">
+         <div class="panel-heading">
+           <h3 class="panel-title">Predictions</h3>
+         </div>
+         <div id="prediction-data" class="panel-body"></div>
+         <div id="recommended-data" class="panel-body"></div>
+         <table class="table table striped"> 
+          <thead>
+            <tr>
+              <th>Airline</th>
+              <th>Predicted Value</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        
+      </div>
+       </div>
+      <!- <!- -->
+     <!-- </div> -->
+     <!-- <div class="col-md-12"> -->
+      <!-- <div id="pie" style="width:800px;height:600px;"></div> -->
+      <!-- <div id="mapcontainer" style="width:700px;height:500px;"></div> -->
+     <!-- </div> -->
+   <!-- </div> -->
+ <!-- </div> --> 
+ 
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <!- <script src="{{ url_for('static', filename='static/style.css') }}"></script> -->
+  <!-- <script src="{{ url_for('static', filename='js/chart.js') }}"></script> -->
+  <!-- <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
+  <!-- <script src="{{ url_for('static', filename='js/map.js') }}"></script> --> 
+ 
+  <!-- <script src="jquery-3.4.1.min.js"></script> -->
+<!-- 
+  <script type="text/javascript" src="/static/js/app.js"></script>
+  <script type="text/javascript" src="/static/js/map.js"></script> -->
+</body>
+</html>
